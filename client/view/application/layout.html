@@ -1,0 +1,11 @@
+<template name="layout">
+        {{>header}}
+        {{>errors}}
+    <div class="container">
+        <div id="main">
+            {{> buttons}}
+            {{>yield}}
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
+</template>

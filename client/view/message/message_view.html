@@ -1,0 +1,49 @@
+<template name="messageView">
+    <form class="main form">
+        <div class="form-group">
+            <label class="control-label" for="text">Your message</label>
+            <textarea name="text" class="form-control" rows="3" placeholder="Text your post">
+                {{text}}
+            </textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+    </form>
+</template>
+
+
+
+<!--<template name="messageView">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+
+            <!--<div class="col-md-12">-->
+                <!--<div class="panel panel-info">-->
+                    <!--<div class="panel-heading">-->
+                        <!--GROUP CHAT-->
+                    <!--</div>-->
+                    <!--<div class="panel-body">-->
+                        <!--<ul class="media-list">-->
+                            <!--&lt;!&ndash; message template &ndash;&gt;-->
+                            <!--{{#each messages}}-->
+                                <!--{{> message}}-->
+                            <!--{{/each}}-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--{{#if currentUser}}-->
+                        <!--&lt;!&ndash; message textbox &ndash;&gt;-->
+                        <!--<form class="new-message">-->
+                            <!--<div class="panel-footer">-->
+                                <!--<div class="input-group">-->
+                                    <!--<input type="text" name="text" class="form-control" placeholder="Enter Message" />-->
+                                    <!--<span class="input-group-btn">-->
+                  <!--<button class="btn btn-info send" type="submit">SEND</button>-->
+                <!--</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</form>-->
+                    <!--{{/if}}-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</template>-->

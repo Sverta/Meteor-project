@@ -1,0 +1,26 @@
+<template name="buttons">
+    <ul class="buttons-menu">
+        {{#if currentUser}}
+            <li>
+                <a href="{{pathFor 'postSubmit'}}" class="btn btn-fab btn-fab-mini btn-primary"><i class="glyphicon glyphicon-edit"></i></a>
+                <!--<a href="{{pathFor 'postSubmit'}}">Submit Post</a>-->
+            </li>
+            <li>
+                <a href="{{pathFor 'messageView'}}" class="btn btn-fab btn-fab-mini btn-primary"><i class="material-icons">sms</i></a>
+                <!--<a href="{{pathFor 'messageView'}}">Submit Post</a>-->
+            </li>
+            <li>
+                <a href="{{pathFor 'profile'}}" class="btn btn-fab btn-fab-mini btn-primary"><i class="material-icons">account_circle</i></a>
+                <!--<a href="{{pathFor 'profile'}}">my profile</a>-->
+            </li>
+            <li class="dropdown">
+
+                {{> notifications}}
+            </li>
+            <li>
+                <a href="#" class="btn btn-fab btn-fab-mini btn-primary"><i class="material-icons">keyboard_arrow_up</i></a>
+                <!--<a href="{{pathFor 'profile'}}">my profile</a>-->
+            </li>
+        {{/if}}
+    </ul>
+</template>
